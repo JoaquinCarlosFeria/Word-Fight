@@ -27,8 +27,9 @@ body{
 
 /* adjust the header */
 .wrapper header{
-    font-size: 28px;
+    font-size: 50px;
     font-weight: 500;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-align: center;
 }
 

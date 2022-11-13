@@ -27,7 +27,13 @@ function data(result, word) {
         computerWordLength();
         document.querySelector(".answer span").innerText = computerWord;
         runningScore = runningScore - computerWord;
-        document.querySelector(".user span").innerText = runningScore;
+        if (runningScore > 0) {
+        document.querySelector(".user span").innerText = "You are winning by " + runningScore + " (" + runningScore + ")";
+        } else if (runningScore < 0) {
+        document.querySelector(".user span").innerText = "You are losing by " + (-runningScore) + " (" + runningScore + ")";    
+        } else {
+        document.querySelector(".user span").innerText = "You are tied at " + (0);    
+        }
         if (fakeRound == 5) {
             document.querySelector(".rounds span").innerText = fakeRound + "/5 (Enter in any word for result or remove/add a letter from existing word)";
             } else {
@@ -49,7 +55,13 @@ function data(result, word) {
         computerWordLength();
         document.querySelector(".answer span").innerText = computerWord;
         runningScore = runningScore + word.length - computerWord;
-        document.querySelector(".user span").innerText = runningScore;
+        if (runningScore > 0) {
+            document.querySelector(".user span").innerText = "You are winning by " + runningScore + " (" + runningScore + ")";
+            } else if (runningScore < 0) {
+            document.querySelector(".user span").innerText = "You are losing by " + (-runningScore) + " (" + runningScore + ")";    
+            } else {
+            document.querySelector(".user span").innerText = "You are tied at " + (0);    
+            }
         if (fakeRound == 5) {
         document.querySelector(".rounds span").innerText = fakeRound + "/5 (Enter in any word for result or remove/add a letter from existing word)";
         } else {
