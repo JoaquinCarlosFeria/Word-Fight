@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <Title>Word Fight</Title>
+        <link rel="stylesheet" href="style.css">
+        <meta name="vieport" content="width=device-width, initial-scale=1.0">
+        <!--Links for icons-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+        <style>
+            div.title {
+                position: absolute;
+                top: 0;
+            }
+        </style> 
+    </head>
+    <body style="background-color:rgb(0, 88, 182);">
+        <div class="wrapper">
+            <header>Word Fight</header>
+            <div class="search">
+                <input type="text" placeholder="Enter a word">
+                <i class="fas fa-search"></i>
+                <span class="material-icons">close</span>
+            </div>
+            <p class="info-text">Type the longest word into the search bar and beat out the computer</p>
+            <ul>
+                <li class="word">
+                    <div class="details">
+                        <p>Number of Letters</p>
+                        <span>0</span>
+                    </div>
+                    <i></i>
+                </li>
+            </li>
+            <div class="content">
+                <li class="meaning">
+                    <div class="details">
+                        <p>Meaning: </p>
+                        <span>_</span>
+                    </div>
+                </li>
+            </div>
+            <div class="computer">
+                <li class="answer">
+                    <div class="details">
+                        <p>Computer Word Length: </p>
+                        <span>_</span>
+                    </div>
+                </li>
+            </div>
+                <div class="user">
+                    <li class="input">
+                        <div class="details">
+                            <p>User Score: </p>
+                            <span>_</span>
+                        </div>
+                    </li>
+                </div>
+                <div class="rounds">
+                    <li class="amount">
+                        <div class="details">
+                            <p>Round: </p>
+                            <span>_</span>
+                        </div>
+                    </li>
+                </div>
+            </ul>
+        </div>
+
+        <script src="script.js"></script>
+
+    </body>
+</html>
